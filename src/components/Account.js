@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchRecipes } from '../apiService';
 // import smallLogo from '../assets/../assets/logotransparent.png';
 import transparentLogo from '../assets/logotransparent.png'
-import userIcon from '../assets/user-icon.png'
+import { FaUserCircle } from "react-icons/fa";
 import '../styles/account.css';
 import { Link } from 'react-router-dom';
 
@@ -56,7 +56,7 @@ const Account = () => {
             <div className="main-content">
                 <h1>Account Information</h1>
                 <div className="user-info">
-                    <img src={userIcon} alt="User Icon" className="user-icon" />
+                    <FaUserCircle />
                     <p><strong>Username:</strong> John Smith</p>
                     <p><strong>Email:</strong> john.smith@example.com</p>
                     <p><strong>Birthday:</strong> January 1, 1990</p>
